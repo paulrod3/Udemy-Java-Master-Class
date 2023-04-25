@@ -30,8 +30,7 @@ public class HealthTracker {
             System.out.println("1. View BMI");
             System.out.println("2. View recommended calorie intake");
             System.out.println("3. Update weight");
-            System.out.println("4. Update height");
-            System.out.println("5. Exit");
+            System.out.println("4. Exit");
 
             int choice = input.nextInt();
 
@@ -67,14 +66,8 @@ public class HealthTracker {
                     calorieIntake = calculateCalorieIntake();
                     System.out.println("Weight updated.");
                     break;
+
                 case 4:
-                    System.out.print("Enter your new height in inches: ");
-                    height = input.nextDouble();
-                    bmi = calculateBMI();
-                    calorieIntake = calculateCalorieIntake();
-                    System.out.println("Height updated.");
-                    break;
-                case 5:
                     running = false;
                     System.out.println("Exiting HealthTracker...");
                     break;
